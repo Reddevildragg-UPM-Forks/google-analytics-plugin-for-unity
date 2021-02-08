@@ -273,6 +273,14 @@ public class GoogleAnalyticsMPV3 {
         + AddCustomVariables(builder)
         + AddCampaignParameters(builder)
         + AddTrackerVals());
+    
+    //we are just gonna track this as a page as well for ease because GA is stupid
+    SendGaHitWithMeasurementProtocol(url
+                                     + AddRequiredMPParameter(Fields.HIT_TYPE, "pageview")
+                                     + AddRequiredMPParameter(Fields.PAGE, builder.GetScreenName())
+                                     + AddCustomVariables(builder)
+                                     + AddCampaignParameters(builder)
+                                     + AddTrackerVals());
   }
 
   public void LogEvent(EventHitBuilder builder) {

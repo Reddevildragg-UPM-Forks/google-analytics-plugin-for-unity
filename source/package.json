@@ -1,0 +1,13 @@
+{
+	"name": "com.gg.unity-analytics",
+	"version": "1.0.0",
+	"displayName": "Google Analytics",
+	"description": "Fork of googles v4 analytics updated for unity",
+	"unity": "2019.1",
+	"keywords": [
+		"analytics"
+	],
+	"author": {
+		"name": "Greener Games",
+	}
+}
